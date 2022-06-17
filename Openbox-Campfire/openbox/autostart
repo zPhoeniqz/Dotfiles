@@ -1,0 +1,17 @@
+# required for xfce settings to work
+xfsettingsd &
+
+# start the panel
+tint2 &
+
+# fix some wallpaper issues
+xrandr --output Virtual-1 --mode "1920x1080" 
+
+# load wallpaper
+feh --bg-fill /usr/share/backgrounds/squares.jpg &
+
+# start plank
+plank &
+
+# start ulauncher
+ulauncher --no-window-shadow --hide-window &
